@@ -21,14 +21,3 @@ l_register.addEventListener("click", (e) => {
   register.style.display = "block";
   logIn.style.display = "none";
 });
-
-const password = document.querySelector("#password");
-const confirmPassword = document.querySelector("#confirmPassword");
-
-if (password.value.length === 8) {
-  password.setAttribute("title", "✅ Password confirmed!");
-  password.style.borderColor = "green";
-} else {
-  password.setAttribute.title = "❌ Must be exactly 8 characters";
-  password.style.borderColor = "red";
-}
